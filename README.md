@@ -14,3 +14,4 @@ Rowdle!!! A game where you had to guess the team member in 4 tries!
 
 ## Privacy
  - For privacy reasons, all names have been changed using a random name generator (except mine).
+ - This is also why there is no link to the game.
