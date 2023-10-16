@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚣‍♂️</text></svg>" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Rowdle</title>
+  </head>
+  <body>
+    <div class="header">ROWDLE🚣‍♂️</div>
+    <div class="container">
+      <select id="guess">
+        <option value="select">--Select--</option>
+        <option value="0">Moses Ward</option>
+        <option value="1">Terrence Parsons</option>
+        <option value="2">Theodore French</option>
+        <option value="3">Todd Massey</option>
+        <option value="4">Jordan White</option>
+        <option value="5">Jayden Carvajal</option>
+        <option value="6">Cornelius Morris</option>
+        <option value="7">Adam Park</option>
+        <option value="8">Jamie Munoz</option>
+        <option value="9">Brian Anderson</option>
+        <option value="10">Terry Carr</option>
+        <option value="11">Garry Allison</option>
+        <option value="12">Santiago Pena</option>
+        <option value="13">Alberto Ortega</option>
+        <option value="14">Julius Hill</option>
+        <option value="15">Kurt Simmons</option>
+        <option value="16">Joey Gray</option>
+        <option value="17">Paul Briggs</option>
+        <option value="18">Matthew Allen</option>
+        <option value="19">Walter Sanchez</option>
+        <option value="20">Jared Perry</option>
+        <option value="21">Merle Jenkins</option>
+        <option value="22">Clarence Christensen</option>
+        <option value="23">Enrique Hale</option>
+        <option value="24">Troy Castro</option>
+        <option value="25">Ken Wells</option>
+        <option value="26">Larry Martinez</option>
+        <option value="27">Alton Gibson</option>
+        <option value="28">Edmund Perkins</option>
+        <option value="29">Boyd Flores</option>
+        <option value="30">Tyrone Riley</option>
+        <option value="31">Arnold Richardson</option>
+        <option value="32">Otis Evans</option>
+        <option value="33">Blake Watson</option>
+      </select>
+      <button onclick="submit()">Submit</button>
+    </div>
+
+    <div class="guesses">
+      <div class="head">
+        <div class="box-1"></div>
+        <div class="box-2">Team</div>
+        <div class="box-3">Boat</div>
+        <div class="box-4">Side</div>
+        <div class="box-5">Seat</div>
+        <div class="box-6">Grade</div>
+        <div class="box-7">Height</div>
+      </div>
+      <div class="guess-1">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+      </div>
+      <div class="guess-2">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+      </div>
+      <div class="guess-3">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+      </div>
+      <div class="guess-4">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+      </div>
+      <div class="guess-5">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+      </div>
+    </div>
+
+    <button onclick="manual()" class="manual-button">?</button>
+
+    <div class="win-screen">
+      <div class="header">YOU WIN</div>
+      <div class="">Horray: The Correct Person Was <span class="person"></span></div>
+      <button class="exit" onclick="exit()">X</button>
+    </div>
+    <div class="lose-screen">
+      <div class="header">YOU LOSE</div>
+      <div class="">I'm Sorry: The Correct Person Was <span class="correct-person"></span></div>
+      <button class="exit" onclick="exit()">X</button>
+    </div>
+    <div class="manual-screen">
+      <div class="manual-header">How To Play</div>
+      <ul>
+        <li>You have four tries.</li>
+        <li>A <span style="color: yellow">yellow</span> background means that the number is within 1.</li>
+        <li>A <span style="color: green">green</span> background means that your guess matches with the actual answer.</li>
+        <li>Guess the rower (or coxswain).</li>
+      </ul>
+      <button class="exit" onclick="exit()">X</button>
+    </div>
+  </body>
+</html>
